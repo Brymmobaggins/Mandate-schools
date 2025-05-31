@@ -16,7 +16,7 @@
 
 .comic-neue-regular {
   font-family: "Comic Neue", cursive;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -49,6 +49,20 @@ body {
 }
 .object-fit-cover {
   object-fit: cover;
+}
+.smooth-hover-link {
+  color: #0d6efd; /* Bootstrap primary color */
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.smooth-hover-link:hover {
+  color: #6610f2; /* Bootstrap purple */
+  text-decoration: underline;
+}
+
+footer{
+  background-color: var(--tertiary);
 }
 
 @media (min-width: 768px) {
