@@ -1,10 +1,9 @@
 /** @format */
 
 :root {
-
   --deep-blue: #1a3b6d;
-  --light-blue:#394090;
-    /* --light-blue: #bdc4cc; */
+  --light-blue: #394090;
+  /* --light-blue: #bdc4cc; */
 
   --white: #ffffff;
   --charcoal-gray: #333333;
@@ -28,8 +27,13 @@
   font-weight: 700;
   font-style: normal;
 }
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
 
-.comic-neue-light-italic {
+/* .comic-neue-light-italic {
   font-family: "Comic Neue", cursive;
   font-weight: 300;
   font-style: italic;
@@ -45,18 +49,51 @@
   font-family: "Comic Neue", cursive;
   font-weight: 700;
   font-style: italic;
-}
+} */
 
 body {
   background: var(--tertiary);
 }
-.social-media-section{
+/* Add this to your stylesheet */
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent */
+  backdrop-filter: blur(6px);    /* optional: adds glass effect */
+}
+
+.social-media-section {
   background: var(--light-blue);
 }
-/* footer {
-    background-color: var(--deep-blue);
-     color: var(--white); 
-} */
+/* Optional blur and transparency for navbar */
+.navbar-overay {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  z-index: 1050;
+}
+
+/* Prevent overlay div from blocking content */
+.carousel-item .overlay {
+  z-index: 1;
+}
+.carousel-caption {
+  z-index: 2;
+}
+
+/* Responsive text control */
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
 .object-fit-cover {
   object-fit: cover;
 }
@@ -71,7 +108,7 @@ body {
   text-decoration: underline;
 }
 
-footer{
+footer {
   background-color: var(--tertiary);
 }
 

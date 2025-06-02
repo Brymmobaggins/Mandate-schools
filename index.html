@@ -38,113 +38,125 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="comic-neue-light">
-    <!-- navbar -->
+    
+    <!-- Navbar -->
     <nav
-      class="navbar navbar-expand-lg text-dark bg-body-tertiary py-3 fixed-top fs-5"
+      class="navbar navbar-expand-lg navbar-overlay text-light py-3 fixed-top fs-5"
     >
       <div class="container">
-        <div class="">
-          <a
-            class="navbar-brand d-flex flex-column flex-md-row align-items-center"
-            href="index.html"
+        <a
+          class="navbar-brand d-flex flex-column flex-md-row align-items-center"
+          href="index.html"
+        >
+          <img
+            src="./images/mandate-logo-removebg-preview.png"
+            alt="Mandate Schools Logo"
+            width="65"
+            height="60"
+            class="mb-1 mb-md-0 me-0 me-md-2"
+          />
+          <span class="h3 comic-neue-bold text-light mb-0"
+            >Mandate Schools</span
           >
-            <img
-              src="./images/mandate-logo-removebg-preview.png"
-              alt="logo"
-              width="65"
-              height="60"
-              class="mb-1 mb-md-0 me-0 me-md-2"
-            />
-            <span class="h3 comic-neue-bold text-dark mb-0"
-              >Mandate Schools</span
-            >
-          </a>
-        </div>
+        </a>
 
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#nav-menu"
-          aria-controls="navbarNav"
+          aria-controls="nav-menu"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse comic-neue-bold" id="nav-menu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item me-2">
+          <ul class="navbar-nav ms-auto text-center text-lg-start">
+            <li class="nav-item me-lg-3">
               <a href="#Home" class="nav-link">Home</a>
             </li>
-            <li class="nav-item me-3">
-              <a href="#About-us" class="nav-link">About us</a>
+            <li class="nav-item me-lg-3">
+              <a href="#About-us" class="nav-link">About Us</a>
             </li>
-            <li class="nav-item me-3">
+            <li class="nav-item me-lg-3">
               <a href="#Academics" class="nav-link">Academics</a>
             </li>
-            <li class="nav-item me-3">
-              <a href="#" class="nav-link">Admission</a>
+            <li class="nav-item me-lg-3">
+              <a href="#Admission" class="nav-link">Admission</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">News</a>
-            </li>
+            <li class="nav-item"><a href="#News" class="nav-link">News</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- showcase -->
+
+    <!-- Hero Carousel -->
     <section
       id="heroCarousel"
-      class="contain carousel slide carousel-fade"
+      class="carousel slide carousel-fade"
       data-bs-ride="carousel"
     >
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <!-- Slide 1 -->
+        <div class="carousel-item active position-relative">
           <img
             src="/images/student_in_the_ICT.PNG"
             class="d-block w-100 vh-100 object-fit-cover"
             alt="Slide 1"
           />
           <div
-            class="carousel-caption d-flex flex-column justify-content-center h-100"
+            class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"
+          ></div>
+          <div
+            class="carousel-caption d-flex flex-column justify-content-center align-items-start text-start h-100"
           >
-            <h1 class="display-3 fw-bold">Science made easy</h1>
-            <!-- <p class="lead">Inspiring excellence in every student.</p> -->
+            <p class="display-3 comic-neue-bold fs-1 text-light">Science made easy</p>
+            <p>Where curiosity meets technology — unlocking the future through hands-on discovery.</p>
           </div>
         </div>
 
-        <div class="carousel-item">
+        <!-- Slide 2 -->
+        <div class="carousel-item position-relative">
           <img
             src="/images/student_in_the_chemistry_lab.PNG"
             class="d-block w-100 vh-100 object-fit-cover"
             alt="Slide 2"
           />
           <div
-            class="carousel-caption d-flex flex-column justify-content-center h-100"
+            class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"
+          ></div>
+          <div
+            class="carousel-caption d-flex flex-column justify-content-center align-items-start text-start h-100"
           >
-            <h1 class="display-3 fw-bold">Digital Classrooms</h1>
-            <p class="lead">Empowering learning through technology.</p>
+            <h1 class="display-3 fw-bold text-light">Digital Classrooms</h1>
+            <p class="lead text-light">
+              Empowering learning through technology.
+            </p>
           </div>
         </div>
 
-        <div class="carousel-item">
+        <!-- Slide 3 -->
+        <div class="carousel-item position-relative">
           <img
             src="/images/student_with_musical_instruments.PNG"
             class="d-block w-100 vh-100 object-fit-cover"
-            alt="Slide 2"
+            alt="Slide 3"
           />
           <div
-            class="carousel-caption d-flex flex-column justify-content-center h-100"
+            class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"
+          ></div>
+          <div
+            class="carousel-caption d-flex flex-column justify-content-center align-items-start text-start h-100"
           >
-            <h1 class="display-3 fw-bold">Digital Classrooms</h1>
-            <p class="lead">Empowering learning through technology.</p>
+            <h1 class="display-3 fw-bold text-light">Creative Expression</h1>
+            <p class="lead text-light">Nurturing talents and passions.</p>
           </div>
         </div>
-
-        <!-- Add more slides as needed -->
       </div>
 
+      <!-- Controls -->
       <button
         class="carousel-control-prev"
         type="button"
@@ -216,46 +228,57 @@
     </section>
     <!-- our school -->
 
-    <section class="p-5">
+    <section class="py-5 bg-light">
       <div class="container">
-        <h1 class="text-center">Our School</h1>
+        <h2 class="text-center comic-neue-bold fs-2 mb-5">Our School</h2>
         <div class="row g-4">
-          <div class="col-md">
-            <div class="card bg-dark text-light">
+          <!-- Boarding -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div
+              class="card h-100 shadow-sm border-0 rounded-3 hover-shadow overflow-hidden"
+            >
               <img
                 src="/img-border/students_in_hostel.PNG"
-                class="card-img-top"
-                alt=""
+                class="card-img-top img-fluid object-fit-cover"
+                alt="Students in boarding hostel"
+                style="height: 250px"
               />
-              <div class="card-body">
-                <h5 class="card-title"></h5>
-                <p class="card-text">boarding</p>
+              <div class="card-body bg-dark text-light text-start">
+                <h5 class="card-title comic-neue-bold mb-0 p-3">Boarding</h5>
               </div>
             </div>
           </div>
-          <div class="col-md">
-            <div class="card bg-dark text-light">
+
+          <!-- Primary -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div
+              class="card h-100 shadow-sm border-0 rounded-3 hover-shadow overflow-hidden"
+            >
               <img
                 src="/img-primary/student_in_the_playground.PNG"
-                class="card-img-top"
-                alt=""
+                class="card-img-top img-fluid object-fit-cover"
+                alt="Students at the playground"
+                style="height: 250px"
               />
-              <div class="card-body">
-                <h5 class="card-title"></h5>
-                <p class="card-text">Primary</p>
+              <div class="card-body bg-dark text-light text-start">
+                <h5 class="card-title comic-neue-bold mb-0 p-3">Primary</h5>
               </div>
             </div>
           </div>
-          <div class="col-md">
-            <div class="card bg-dark text-light">
+
+          <!-- Secondary -->
+          <div class="col-12 col-sm-6 col-lg-4 rounded">
+            <div
+              class="card h-100 shadow-sm border-0 rounded-3 hover-shadow overflow-hidden"
+            >
               <img
                 src="/img-secondary/student_in_the_chemistry_lab.PNG"
-                class="card-img-top"
-                alt=""
+                class="card-img-top img-fluid object-fit-cover"
+                alt="Students in the chemistry lab"
+                style="height: 250px"
               />
-              <div class="card-body">
-                <h5 class="card-title"></h5>
-                <p class="card-text">Secondary</p>
+              <div class="card-body bg-dark text-light text-start">
+                <h5 class="card-title comic-neue-bold mb-0 p-3">Secondary</h5>
               </div>
             </div>
           </div>
@@ -271,7 +294,11 @@
             <h2 class="text-light comic-neue-bold fs-1">Connect With Us</h2>
             <div class="d-flex mt-4">
               <div>
-                <a href="https://www.instagram.com/mandateschools/" class="text-decoration-none me-4" title="instagram">
+                <a
+                  href="https://www.instagram.com/mandateschools/"
+                  class="text-decoration-none me-4"
+                  title="instagram"
+                >
                   <img
                     src="/assests/icons/instagram.png"
                     class="img-fluid"
@@ -281,7 +308,11 @@
                 </a>
               </div>
               <div class="">
-                <a href="index.html" class="text-decoration-none me-4" title="facebook">
+                <a
+                  href="index.html"
+                  class="text-decoration-none me-4"
+                  title="facebook"
+                >
                   <img
                     src="/assests/icons/facebook.png"
                     class="img-fluid"
@@ -304,7 +335,8 @@
           </div>
           <div class="col-md">
             <div class="ratio ratio-16x9">
-              <iframe class="rounded shadow"
+              <iframe
+                class="rounded shadow"
                 width="853"
                 height="480"
                 src="https://www.youtube.com/embed/BQv3hvmIxh4"
@@ -315,6 +347,16 @@
                 allowfullscreen
               ></iframe>
             </div>
+            <!-- <div class="mt-2">
+              <a
+                href="https://www.youtube.com/channel/YOUR_CHANNEL"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-comic-neue-bold"
+              >
+                See More
+              </a>
+            </div> -->
           </div>
         </div>
       </div>
@@ -322,17 +364,19 @@
 
     <!-- footer -->
     <footer class="py-4">
-      <div class="container">
-        <div class="row">
-          <div class="col">
+      <div class="container px-4">
+        <div class="row text-center text-md-start">
+          <div class="col-12 col-md-3 mb-4 text-center text-md-start">
             <img
               src="./images/mandate-logo-removebg-preview.png"
               alt="mandate logo"
-              class="img-fluid"
+              style="max-width: 120px"
+              class="img-fluid mb-2"
             />
-            <h3 class="text-center comic-neue-bold">Mandate Schools</h3>
+            <h3 class="comic-neue-bold mt-2">Mandate Schools</h3>
           </div>
-          <div class="col">
+
+          <div class="col-12 col-md-3 mb-4">
             <h2 class="comic-neue-bold">About Us</h2>
             <ul class="list-unstyled fs-5">
               <li class="pt-2">
@@ -357,7 +401,7 @@
               </li>
             </ul>
           </div>
-          <div class="col">
+          <div class="col-12 col-md-3 mb-4">
             <h2 class="comic-neue-bold">School</h2>
             <ul class="list-unstyled fs-5">
               <li class="pt-2">
@@ -388,36 +432,40 @@
               </li>
             </ul>
           </div>
-          <div class="col fs-4">
+          <div class="col-12 col-md-3 mb-4 fs-4">
             <h2 class="comic-neue-bold">Contact Us</h2>
             <ul class="list-unstyled">
-              <li class="d-flex">
-                <i class="bi bi-geo-fill me-2"></i
-                ><span class="me-4"
+              <li class="pt-2 d-flex align-items-start gap-2">
+                <i class="bi bi-geo-fill"></i>
+                <span
                   >10-16 Nanka Avenue, Off LASU Expressway, By Afolabi Bus Stop,
-                  Akesan, Lagos, Nigeria 102213.</span
+                  Akesan, Lagos, Nigeria 102213</span
                 >
               </li>
-              <li class="pt-2 d-flex">
+
+              <li class="pt-2 d-flex align-items-start gap-2">
                 <i class="bi bi-telephone-fill me-2"></i
-                ><span class="me-4"
+                ><span class=""
                   >08023213991, 08027738527, 08039111535, 08030828891.</span
                 >
               </li>
-              <li class="pt-2 d-flex">
+              <li class="pt-2 d-flex align-items-start gap-1">
                 <i class="bi bi-envelope-fill me-2"></i
                 ><span class="me-4">info@mandateschools.com.ng</span>
               </li>
             </ul>
           </div>
         </div>
-        <hr />
-        <div class="d-flex justify-content-between item-center">
-          <p>© 2025 Mandate Schools, All Rights Reserved.</p>
-          <p>
-            design by <small class="fw-bold">XyberSolution</small>
-            +2348121286659
-          </p>
+        <hr class="border-dark" />
+        <div class="row small text-center text-md-start mt-4">
+          <div class="col-12 col-md-6">
+            <p class="mb-0">© 2025 Mandate Schools, All Rights Reserved.</p>
+          </div>
+          <div class="col-12 col-md-6 text-md-end">
+            <p class="mb-0">
+              Designed by <strong>XyberSolution</strong> &nbsp; +2348121286659
+            </p>
+          </div>
         </div>
       </div>
     </footer>
