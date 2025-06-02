@@ -1,8 +1,11 @@
 /** @format */
 
 :root {
+
   --deep-blue: #1a3b6d;
-  --light-blue: #bdc4cc;
+  --light-blue:#394090;
+    /* --light-blue: #bdc4cc; */
+
   --white: #ffffff;
   --charcoal-gray: #333333;
   --soft-beige: #fbe8c7;
@@ -47,6 +50,13 @@
 body {
   background: var(--tertiary);
 }
+.social-media-section{
+  background: var(--light-blue);
+}
+/* footer {
+    background-color: var(--deep-blue);
+     color: var(--white); 
+} */
 .object-fit-cover {
   object-fit: cover;
 }

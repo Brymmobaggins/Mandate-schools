@@ -37,22 +37,29 @@
     <title>Mandate Schools</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="comic-neue-regular">
+  <body class="comic-neue-light">
     <!-- navbar -->
     <nav
       class="navbar navbar-expand-lg text-dark bg-body-tertiary py-3 fixed-top fs-5"
     >
       <div class="container">
-        <a class="navbar-brand" href="#heroCarousel">
-          <img
-            src="./images/mandate-logo.jpeg"
-            alt="Logo"
-            width="30"
-            height="48"
-            class="d-inline-block align-text-top"
-          />
-          Mandate Schools
-        </a>
+        <div class="">
+          <a
+            class="navbar-brand d-flex flex-column flex-md-row align-items-center"
+            href="index.html"
+          >
+            <img
+              src="./images/mandate-logo-removebg-preview.png"
+              alt="logo"
+              width="65"
+              height="60"
+              class="mb-1 mb-md-0 me-0 me-md-2"
+            />
+            <span class="h3 comic-neue-bold text-dark mb-0"
+              >Mandate Schools</span
+            >
+          </a>
+        </div>
 
         <button
           class="navbar-toggler"
@@ -65,7 +72,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="nav-menu">
+        <div class="collapse navbar-collapse comic-neue-bold" id="nav-menu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item me-2">
               <a href="#Home" class="nav-link">Home</a>
@@ -77,7 +84,7 @@
               <a href="#Academics" class="nav-link">Academics</a>
             </li>
             <li class="nav-item me-3">
-              <a href="#" class="nav-link">Admmission</a>
+              <a href="#" class="nav-link">Admission</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">News</a>
@@ -257,13 +264,58 @@
     </section>
 
     <!-- social media -->
-    <section class="bg-primary p-5">
+    <section class="social-media-section p-5">
       <div class="container">
         <div class="row g-4">
           <div class="col-md">
-            <h2 class="">Connect With Us</h2>
+            <h2 class="text-light comic-neue-bold fs-1">Connect With Us</h2>
+            <div class="d-flex mt-4">
+              <div>
+                <a href="https://www.instagram.com/mandateschools/" class="text-decoration-none me-4" title="instagram">
+                  <img
+                    src="/assests/icons/instagram.png"
+                    class="img-fluid"
+                    width="80"
+                    alt="instagram"
+                  />
+                </a>
+              </div>
+              <div class="">
+                <a href="index.html" class="text-decoration-none me-4" title="facebook">
+                  <img
+                    src="/assests/icons/facebook.png"
+                    class="img-fluid"
+                    width="80"
+                    alt="facebook"
+                  />
+                </a>
+              </div>
+              <div>
+                <a href="index.html" class="text-decoration-none me" title="X">
+                  <img
+                    src="/assests/icons/x.png"
+                    class="img-fluid rounded-circle"
+                    width="80"
+                    alt="x"
+                  />
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="col-md"></div>
+          <div class="col-md">
+            <div class="ratio ratio-16x9">
+              <iframe class="rounded shadow"
+                width="853"
+                height="480"
+                src="https://www.youtube.com/embed/BQv3hvmIxh4"
+                title="Mandate Private Schools : One of the best schools in Lagos and Nigeria as a whole"
+                frameborder="0"
+                allow="accelerometer; aria-controls; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -278,11 +330,11 @@
               alt="mandate logo"
               class="img-fluid"
             />
-            <h2 class="text-center comic-neue-bold">Mandate Schools</h2>
+            <h3 class="text-center comic-neue-bold">Mandate Schools</h3>
           </div>
           <div class="col">
             <h2 class="comic-neue-bold">About Us</h2>
-            <ul class="list-unstyled fs-4">
+            <ul class="list-unstyled fs-5">
               <li class="pt-2">
                 <a href="#" class="text-decoration-none text-dark link-primary"
                   >Mandate Schools</a
@@ -307,13 +359,13 @@
           </div>
           <div class="col">
             <h2 class="comic-neue-bold">School</h2>
-            <ul class="list-unstyled fs-4">
+            <ul class="list-unstyled fs-5">
               <li class="pt-2">
                 <a href="#" class="text-decoration-none text-dark link-primary"
                   >Nursery and Primary</a
                 >
               </li>
-            
+
               <li class="pt-2">
                 <a href="#" class="text-decoration-none text-dark link-primary"
                   >College</a
@@ -339,14 +391,20 @@
           <div class="col fs-4">
             <h2 class="comic-neue-bold">Contact Us</h2>
             <ul class="list-unstyled">
-              <li class="comic-neue-regular">
-                <i class="bi bi-geo-fill me-2"></i><span class="me-4">10-16 Nanka Avenue, Off LASU Expressway, By Afolabi Bus Stop, Akesan, Lagos, Nigeria 102213</span>
+              <li class="d-flex">
+                <i class="bi bi-geo-fill me-2"></i
+                ><span class="me-4"
+                  >10-16 Nanka Avenue, Off LASU Expressway, By Afolabi Bus Stop,
+                  Akesan, Lagos, Nigeria 102213.</span
+                >
               </li>
-              <li class="pt-2">
+              <li class="pt-2 d-flex">
                 <i class="bi bi-telephone-fill me-2"></i
-                ><span class="me-4">08023213991, 08027738527, 08039111535, 08030828891</span>
+                ><span class="me-4"
+                  >08023213991, 08027738527, 08039111535, 08030828891.</span
+                >
               </li>
-              <li class="pt-2">
+              <li class="pt-2 d-flex">
                 <i class="bi bi-envelope-fill me-2"></i
                 ><span class="me-4">info@mandateschools.com.ng</span>
               </li>
@@ -357,7 +415,7 @@
         <div class="d-flex justify-content-between item-center">
           <p>© 2025 Mandate Schools, All Rights Reserved.</p>
           <p>
-            design by <small class="fw-bold">XyberSolution</small> 2025
+            design by <small class="fw-bold">XyberSolution</small>
             +2348121286659
           </p>
         </div>
