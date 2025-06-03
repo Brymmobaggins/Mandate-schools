@@ -27,49 +27,48 @@
   font-weight: 700;
   font-style: normal;
 }
+
+
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
 
-/* .comic-neue-light-italic {
-  font-family: "Comic Neue", cursive;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.comic-neue-regular-italic {
-  font-family: "Comic Neue", cursive;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.comic-neue-bold-italic {
-  font-family: "Comic Neue", cursive;
-  font-weight: 700;
-  font-style: italic;
-} */
-
 body {
   background: var(--tertiary);
 }
+.navbar.scrolled {
+  background-color: #fff !important;
+}
+
+.navbar.scrolled .nav-link,
+.navbar.scrolled .navbar-brand,
+.navbar.scrolled .navbar-toggler-icon,
+.navbar.scrolled .navbar-brand span {
+  color: #000 !important; /* Dark text */
+}
+
+.navbar.scrolled .nav-link:hover {
+  color: #007bff !important; /* Optional hover color */
+}
+
 /* Add this to your stylesheet */
 
 .overlay {
   background: rgba(0, 0, 0, 0.5); /* semi-transparent */
-  backdrop-filter: blur(6px);    /* optional: adds glass effect */
+  backdrop-filter: blur(6px); /* optional: adds glass effect */
 }
 
 .social-media-section {
   background: var(--light-blue);
 }
 /* Optional blur and transparency for navbar */
-.navbar-overay {
+/* .navbar-overlay {
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(6px);
   z-index: 1050;
-}
+} */
 
 /* Prevent overlay div from blocking content */
 .carousel-item .overlay {
@@ -80,14 +79,7 @@ body {
 }
 
 /* Responsive text control */
-@media (max-width: 768px) {
-  .carousel-caption h1 {
-    font-size: 2rem;
-  }
-  .carousel-caption p {
-    font-size: 1rem;
-  }
-}
+
 
 .card-img-top {
   height: 250px;
@@ -115,5 +107,14 @@ footer {
 @media (min-width: 768px) {
   .news-input {
     width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
   }
 }

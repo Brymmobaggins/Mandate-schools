@@ -86,7 +86,8 @@
               <a href="#Admission" class="nav-link text-light">Admission</a>
             </li>
             <li class="nav-item">
-              <a href="#News" class="nav-link text-light">News</a></li>
+              <a href="#News" class="nav-link text-light">News</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -130,7 +131,7 @@
           <div
             class="carousel-caption d-flex flex-column justify-content-center align-items-start text-start h-100"
           >
-            <h1 class="display-1 fw-bold text-light">Sciene Made Easy</h1>
+            <h1 class="display-1 fw-bold text-light">Science Made Easy</h1>
             <p class="lead text-light">
               Empowering young minds through interactive learning and real-world
               experiments.
@@ -377,7 +378,7 @@
               style="max-width: 120px"
               class="img-fluid mb-2"
             />
-            <h3 class="comic-neue-bold mt-2">Mandate Schools</h3>
+            <h3 class="comic-neue-bold">Mandate Schools</h3>
           </div>
 
           <div class="col-12 col-md-3 mb-4">
@@ -473,5 +474,30 @@
         </div>
       </div>
     </footer>
+    <script>
+      // const navbar = document.querySelector(".navbar");
+      // const heroSection = document.querySelector("#heroCarousel");
+
+      // window.addEventListener("scroll", () => {
+      //   const heroHeight = heroSection.offsetHeight;
+
+      //   if (window.scrollY > heroHeight - 80) {
+      //     navbar.classList.add("bg-white", "shadow", "navbar-dark");
+      //     navbar.classList.remove("navbar-overlay", "navbar-dark", "text-dark");
+      //   } else {
+      //     navbar.classList.remove("bg-white", "shadow", "navbar-dark");
+      //     navbar.classList.add("navbar-overlay", "navbar-dark", "text-dark");
+      //   }
+      // });
+
+      window.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 10) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
   </body>
 </html>
