@@ -97,6 +97,9 @@ body {
   color: #6610f2; /* Bootstrap purple */
   text-decoration: underline;
 }
+.btn:hover {
+  background: var(--light-blue);
+}
 
 footer {
   background-color: var(--tertiary);
@@ -114,5 +117,11 @@ footer {
   }
   .carousel-caption p {
     font-size: 1rem;
+  }
+  .director-img {
+    border-radius: 50% !important; /* Circle shape */
+    max-width: 200px;
+    margin: 0 auto 1rem;
+    display: block;
   }
 }
