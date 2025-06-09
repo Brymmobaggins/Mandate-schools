@@ -99,6 +99,9 @@ img {
   transition: color 0.3s ease;
   text-decoration: 0.3s ease;
 }
+.blue{
+  color:#394090;
+}
 
 .smooth-hover-link:hover {
   color: #6610f2; /* Bootstrap purple */
