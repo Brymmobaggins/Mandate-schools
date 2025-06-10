@@ -85,10 +85,10 @@ body {
   height: 250px;
   object-fit: cover;
 }
-img {
+/* img {
   max-width: 800px;
   height: auto;
-}
+} */
 
 .object-fit-cover {
   object-fit: cover;
