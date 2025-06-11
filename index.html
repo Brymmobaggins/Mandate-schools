@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Google font -->
+    <!-- Google font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,7 +23,7 @@
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
-    <!-- link for icons -->
+    <!-- CDN for icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
@@ -36,6 +36,11 @@
     />
     <title>Mandate Schools</title>
     <link rel="stylesheet" href="/assests/css/style.css" />
+    <!-- animate CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body class="comic-neue-light">
     <!-- Navbar -->
@@ -150,7 +155,6 @@
       <!-- navbar ends here -->
     </nav>
 
-   
     <!-- Hero Carousel -->
     <section
       id="heroCarousel"
@@ -171,9 +175,12 @@
           <div
             class="carousel-caption d-flex flex-column justify-content-center align-items-start text-start h-100"
           >
-            <h1 class="display-1 fw-bold text-light">Champions on and off the Field</h1>
+            <h1 class="display-1 fw-bold text-light">
+              Champions on and off the Field
+            </h1>
             <p class="lead text-light fw-semibold">
-             Teamwork, discipline, and determination—our student-athletes shine in sports while excelling academically.
+              Teamwork, discipline, and determination—our student-athletes shine
+              in sports while excelling academically.
             </p>
           </div>
         </div>
@@ -192,7 +199,9 @@
             class="carousel-caption d-flex flex-column justify-content-center align-items-start text-start h-100"
           >
             <h1 class="display-1 fw-bold text-light">Digital Classrooms</h1>
-            <p class="lead text-light fw-semibold">Where curiosity meets technology</p>
+            <p class="lead text-light fw-semibold">
+              Where curiosity meets technology
+            </p>
           </div>
         </div>
 
@@ -265,12 +274,12 @@
       </button>
     </section>
 
-    <!-- Director spee -->
+    <!-- Director speech -->
     <section class="py-5 bg-light">
       <div class="container-sm">
         <div class="row align-items-center g-4 text-center text-md-start">
           <!-- Director's Image -->
-          <div class="col-md-5 text-center">
+          <div class="col-md-5 text-center animate__animated animate__backInLeft">
             <img
               src="/images/Executive Director_2.jpg"
               alt="Director Photo"
@@ -282,14 +291,16 @@
           <!-- Speech Content -->
           <div class="col-md-7">
             <h2 class="fw-bold text-dark">Director's Speech</h2>
-            <p class="lead text-dark">
+            <p class="lead text-secondary fw-semibold">
               Welcome to the official website of Mandate Schools. As you
               navigate through our pages, we trust you will gain a clear
               understanding of our unwavering commitment to academic excellence,
               character development, and holistic education.
             </p>
 
-            <a href="/directors-speech.html" class="btn btn-outline-primary fw-bold btn-lg mb-3"
+            <a
+              href="/directors-speech.html"
+              class="btn btn-outline-primary fw-bold btn-lg mb-3"
               >Read more</a
             >
 
@@ -307,28 +318,10 @@
 
     <section class="py-5 bg-light">
       <div class="container">
-        <h2 class="text-center comic-neue-bold fs-2 mb-5">Our School</h2>
+        <h2 class="text-center display-5 fw-bold mb-5">Our School</h2>
         <div class="row g-4">
-          <!-- Boarding -->
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div
-              class="card h-100 shadow-sm border-0 rounded-3 hover-shadow overflow-hidden"
-            >
-              <img
-                loading="lazy"
-                src="/images/students_in_hostel.PNG"
-                class="card-img-top img-fluid object-fit-cover"
-                alt="Students in boarding hostel"
-                style="height: 250px"
-              />
-              <div class="card-body bg-dark text-light text-start">
-                <h5 class="card-title comic-neue-bold mb-0 p-3">Boarding</h5>
-              </div>
-            </div>
-          </div>
-
-          <!-- Primary -->
-          <div class="col-12 col-sm-6 col-lg-4">
+          <!-- Nursery & Primary -->
+          <div class="col-12 col-md-6 col-lg-4">
             <div
               class="card h-100 shadow-sm border-0 rounded-3 hover-shadow overflow-hidden"
             >
@@ -336,17 +329,37 @@
                 loading="lazy"
                 src="/images/student_in_the_playground.PNG"
                 class="card-img-top img-fluid object-fit-cover"
-                alt="Students at the playground"
-                style="height: 250px"
+                alt="Students in playing"
+                style="height: 350px; min-width: 400px"
               />
               <div class="card-body bg-dark text-light text-start">
-                <h5 class="card-title comic-neue-bold mb-0 p-3">Primary</h5>
+                <h5 class="card-title comic-neue-bold mb-0 p-3">
+                  Nursery & Primary
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Boarding -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="card h-100 shadow-sm border-0 rounded-3 hover-shadow overflow-hidden"
+            >
+              <img
+                loading="lazy"
+                src="/images/students_in_hostel.PNG"
+                class="card-img-top img-fluid object-fit-cover"
+                alt="Students in the hostel room"
+                style="height: 350px; min-width: 400px"
+              />
+              <div class="card-body bg-dark text-light text-start">
+                <h5 class="card-title comic-neue-bold mb-0 p-3">Boarding</h5>
               </div>
             </div>
           </div>
 
           <!-- Secondary -->
-          <div class="col-12 col-sm-6 col-lg-4 rounded">
+          <div class="col-12 col-md-6 col-lg-4 rounded">
             <div
               class="card h-100 shadow-sm border-0 rounded-3 hover-shadow overflow-hidden"
             >
@@ -355,7 +368,7 @@
                 src="/images/student_in_the_chemistry_lab.PNG"
                 class="card-img-top img-fluid object-fit-cover"
                 alt="Students in the chemistry lab"
-                style="height: 250px"
+                style="height: 350px; min-width: 400px"
               />
               <div class="card-body bg-dark text-light text-start">
                 <h5 class="card-title comic-neue-bold mb-0 p-3">Secondary</h5>
