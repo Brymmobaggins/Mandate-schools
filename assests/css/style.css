@@ -3,18 +3,17 @@
 :root {
   --deep-blue: #1a3b6d;
   --light-blue: #394090;
-  /* --light-blue: #bdc4cc; */
-  --white: #ffffff;
-  --charcoal-gray: #333333;
-  --soft-beige: #fbe8c7;
+  --charcoal-gray: #33333;
   --tertiary: #f8f9fa;
+}
+body {
+  background: var(--tertiary);
 }
 .comic-neue-light {
   font-family: "Comic Neue", cursive;
   font-weight: 300;
   font-style: normal;
 }
-
 .comic-neue-regular {
   font-family: "Comic Neue", cursive;
   font-weight: 500;
@@ -26,12 +25,7 @@
   font-weight: 700;
   font-style: normal;
 }
-/* custom styling for cards */
-/* .card{
-  min-height: 200px;
-  height: 100%;
-  width: 75%;
-} */
+
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
@@ -42,14 +36,11 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  color: #f8f9fa; /* Bootstrap's light color */
+  color: #f8f9fa; 
   padding: 0.5rem;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-body {
-  background: var(--tertiary);
-}
 .navbar.scrolled {
   background-color: #fff !important;
 }
@@ -72,8 +63,6 @@ body {
   transition: all 0.4s ease-in-out;
 }
 
-/* Add this to your stylesheet */
-
 .overlay {
   background: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(6px);
@@ -83,12 +72,6 @@ body {
 .social-media-section {
   background: var(--light-blue);
 }
-/* Optional blur and transparency for navbar */
-/* .navbar-overlay {
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(6px);
-  z-index: 1050;
-} */
 
 /* Prevent overlay div from blocking content */
 .carousel-item .overlay {
@@ -98,22 +81,16 @@ body {
   z-index: 2;
 }
 
-/* Responsive text control */
-
 .card-img-top {
   height: 250px;
   object-fit: cover;
 }
-/* img {
-  max-width: 800px;
-  height: auto;
-} */
 
 .object-fit-cover {
   object-fit: cover;
 }
 .smooth-hover-link {
-  color: #0d6efd; /* Bootstrap primary color */
+  color: #0d6efd; 
   text-decoration: none;
   transition: color 0.3s ease;
   text-decoration: 0.3s ease;
@@ -163,6 +140,6 @@ footer {
 @media (min-width: 992px) {
   .navbar .dropdown:hover .dropdown-menu {
     display: block;
-    margin-top: 0; /* optional: remove dropdown animation delay */
+    margin-top: 0; 
   }
 }
