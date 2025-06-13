@@ -37,6 +37,15 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
+.caption-parent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #f8f9fa; /* Bootstrap's light color */
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
 
 body {
   background: var(--tertiary);
