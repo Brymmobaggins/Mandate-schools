@@ -36,7 +36,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  color: #f8f9fa; 
+  color: #f8f9fa;
   padding: 0.5rem;
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -90,13 +90,16 @@ body {
   object-fit: cover;
 }
 .smooth-hover-link {
-  color: #0d6efd; 
+  color: #0d6efd;
   text-decoration: none;
   transition: color 0.3s ease;
   text-decoration: 0.3s ease;
 }
 .blue {
   color: var(--light-blue);
+}
+.icon-color-green {
+  color: #22bb33
 }
 .form-control:focus {
   border-color: var();
@@ -140,6 +143,6 @@ footer {
 @media (min-width: 992px) {
   .navbar .dropdown:hover .dropdown-menu {
     display: block;
-    margin-top: 0; 
+    margin-top: 0;
   }
 }
