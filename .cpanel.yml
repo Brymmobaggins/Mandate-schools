@@ -1,4 +1,4 @@
 deployment:
   tasks:
-    - rm -rf /home1/mandateschoolsco/public_html/Mandate-schools/*
-    - cp -r * /home1/mandateschoolsco/public_html/Mandate-schools/
+    - export DEPLOYPATH=/home1/mandateschoolsco/public_html/Mandate-schools
+    - /bin/cp -R * $DEPLOYPATH
