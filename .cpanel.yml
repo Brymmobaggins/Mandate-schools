@@ -1,4 +1,4 @@
 deployment:
   tasks:
-    - export GIT_WORK_TREE=/home1/mandateschoolsco/public_html/Mandate-schools
-    - git --work-tree=$GIT_WORK_TREE checkout -f main
+    - rm -rf /home1/mandateschoolsco/public_html/Mandate-schools/*
+    - cp -r * /home1/mandateschoolsco/public_html/Mandate-schools/
