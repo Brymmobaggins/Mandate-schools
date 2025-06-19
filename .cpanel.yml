@@ -1,4 +1,6 @@
+# @format
+
 deployment:
   tasks:
-    - export DEPLOYPATH=/home1/mandateschoolsco/public_html
+    - export DEPLOYPATH=/home1/mandateschoolsco/public_html/Mandate-schools
     - /bin/cp -rT . $DEPLOYPATH
