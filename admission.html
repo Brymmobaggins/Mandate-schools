@@ -127,10 +127,10 @@
                   aria-labelledby="academicsDropdown"
                 >
                   <li>
-                    <a class="dropdown-item" href="#nursery">Why Mandate</a>
+                    <a class="dropdown-item" href="/about.html">Why Mandate</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#primary">Admission</a>
+                    <a class="dropdown-item" href="/admission.html">Admission</a>
                   </li>
                 </ul>
               </li>
@@ -151,12 +151,13 @@
         <div class="container">
           <!-- Hero Section with Background -->
           <div
-            class="hero-section text-white text-center d-flex align-items-center justify-content-center"
+            class="hero-section text-white text-center d-flex align-items-center justify-content-center px-3"
             style="
-              height: 80vh;
+              min-height: 80vh;
               background-image: url('/images/Nursery-primary-smiling.jpg');
               background-size: cover;
               background-position: center;
+              background-repeat: no-repeat;
               position: relative;
             "
           >
@@ -168,22 +169,25 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background-color: rgba(0, 0, 0, 0.3);
+                background-color: rgba(0, 0, 0, 0.4);
                 z-index: 1;
               "
             ></div>
 
             <!-- Hero Content -->
             <div style="z-index: 2">
-              <h1 class="display-4 fw-bold text-white text-shadow">
+              <h1 class="display-5 fw-bold text-white text-shadow mb-3">
                 Admissions Now Open
               </h1>
-              <p class="lead">
+              <p class="lead mb-4">
                 Enroll for the 2025/2026 Academic Session at Mandate Schools
               </p>
-              <a href="#application-form" class="btn btn-lg btn-apply mt-3"
-                >Apply Now</a
+              <a
+                href="#application-form"
+                class="btn btn-lg btn-apply fw-semibold"
               >
+                Apply Now
+              </a>
             </div>
           </div>
 
@@ -193,26 +197,28 @@
             <div class="row g-4">
               <div class="col-md-3">
                 <div class="p-3 border rounded shadow-sm h-100">
-                  <h5>Quality Education</h5>
-                  <p>We provide a well-rounded, future-ready curriculum.</p>
+                  <h4>Quality Education</h4>
+                  <p class="lead">We provide a well-rounded, future-ready curriculum.</p>
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="p-3 border rounded shadow-sm h-100">
-                  <h5>Conducive Environment</h5>
-                  <p>Our serene campus promotes learning and growth.</p>
+                  <h4 class="">Conducive Environment</h4>
+                  <p class="lead">Our serene campus promotes learning and growth.</p>
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="p-3 border rounded shadow-sm h-100">
-                  <h5>Qualified Teachers</h5>
-                  <p>Our teachers are experienced and passionate.</p>
+                  <h4>Qualified Teachers</h4>
+                  <p class="lead">
+                    Our teachers are experienced and passionate.
+                  </p>
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="p-3 border rounded shadow-sm h-100">
-                  <h5>Holistic Development</h5>
-                  <p>We nurture academic, moral, and social excellence.</p>
+                  <h4>Holistic Development</h4>
+                  <p class="lead">We nurture academic, moral, and social excellence.</p>
                 </div>
               </div>
             </div>
@@ -221,7 +227,7 @@
           <!-- Admission Requirements -->
           <div class="my-5">
             <h2 class="mb-4 comic-neue-bold">Admission Requirements</h2>
-            <ul class="list-group">
+            <ul class="list-group fs-5 fs-md-4 fs-lg-2">
               <li class="list-group-item">Birth Certificate</li>
               <li class="list-group-item">Two recent passport photographs</li>
               <li class="list-group-item">
@@ -234,7 +240,7 @@
           <!-- How to Apply -->
           <div class="my-5">
             <h2 class="mb-4 comic-neue-bold">How to Apply</h2>
-            <ol class="list-group list-group-numbered">
+            <ol class="list-group list-group-numbered fs-5 fs-md-4 fs-lg-2">
               <li class="list-group-item">
                 Fill out the application form below
               </li>
@@ -250,7 +256,7 @@
             <h2 class="mb-4 comic-neue-bold">Online Application Form</h2>
             <form action="#" method="POST">
               <div class="mb-3">
-                <label for="studentName" class="form-label"
+                <label for="studentName" class="form-label fs-5 fs-md-4 fs-lg-2"
                   >Student's Full Name</label
                 >
                 <input
@@ -262,7 +268,9 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="dob" class="form-label">Date of Birth</label>
+                <label for="dob" class="form-label fs-5 fs-md-4 fs-lg-2"
+                  >Date of Birth</label
+                >
                 <input
                   type="date"
                   class="form-control"
@@ -272,7 +280,9 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="class" class="form-label">Class Applying For</label>
+                <label for="class" class="form-label fs-5 fs-md-4 fs-lg-2"
+                  >Class Applying For</label
+                >
                 <select class="form-select" id="class" name="class" required>
                   <option selected disabled>Choose...</option>
                   <option>Nursery</option>
@@ -282,19 +292,21 @@
                 </select>
               </div>
               <div class="mb-3">
-                <label for="guardianName" class="form-label"
+                <label
+                  for="guardianName"
+                  class="form-label fs-5 fs-md-4 fs-lg-2"
                   >Parent/Guardian Name</label
                 >
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control fs-5 fs-md-4 fs-lg-2"
                   id="guardianName"
                   name="guardianName"
                   required
                 />
               </div>
               <div class="mb-3">
-                <label for="contact" class="form-label"
+                <label for="contact" class="form-label fs-5 fs-md-4 fs-lg-2"
                   >Contact Phone/Email</label
                 >
                 <input
@@ -306,7 +318,7 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="message" class="form-label"
+                <label for="message" class="form-label fs-5 fs-md-4 fs-lg-2"
                   >Additional Message (optional)</label
                 >
                 <textarea
@@ -335,7 +347,7 @@
               href="https://maps.google.com"
               target="_blank"
               class="btn btn-outline-primary"
-              >📍 View Our Location</a
+              ><i class="bi bi-geo-fill"></i> View Our Location</a
             >
           </div>
         </div>
@@ -418,7 +430,7 @@
                 >
               </li>
               <li class="pt-2">
-                <a href="" class="text-decoration-none text-dark link-primary"
+                <a href="/admission.html" class="text-decoration-none text-dark link-primary"
                   >Admission</a
                 >
               </li>
@@ -468,6 +480,5 @@
         </div>
       </div>
     </footer>
-    
   </body>
 </html>
