@@ -99,7 +99,7 @@ body {
   color: var(--light-blue);
 }
 .icon-color-green {
-  color: #22bb33
+  color: #22bb33;
 }
 .form-control:focus {
   border-color: var();
@@ -110,8 +110,21 @@ body {
   color: #6610f2; /* Bootstrap purple */
   text-decoration: underline;
 }
+.btn-apply {
+  background-color: #ffc107;
+  color: #000;
+  border: none;
+}
+.btn-apply:hover {
+  background-color: #e0a800;
+  color: #fff;
+}
+
 .btn:hover {
   background: var(--light-blue);
+}
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 footer {
