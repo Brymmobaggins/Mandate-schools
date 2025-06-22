@@ -57,7 +57,7 @@ body {
 }
 
 .navbar.scrolled .nav-link:hover {
-  color: #007bff !important; /* Optional hover color */
+  color: #007bff !importnt; /* Optional hover color */
 }
 .dropdown-menu {
   transition: all 0.4s ease-in-out;
@@ -67,6 +67,33 @@ body {
   background: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
+}
+/* moving admission text */
+
+.marquee-wrapper {
+  white-space: nowrap;
+  position: relative;
+
+}
+
+.marquee-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Optional: Pause on hover */
+.marquee-text:hover {
+  animation-play-state: paused;
 }
 
 .social-media-section {
