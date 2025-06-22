@@ -57,7 +57,7 @@ body {
 }
 
 .navbar.scrolled .nav-link:hover {
-  color: #007bff !importnt; /* Optional hover color */
+  color: #007bff !important; /* Optional hover color */
 }
 .dropdown-menu {
   transition: all 0.4s ease-in-out;
