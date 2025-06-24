@@ -158,11 +158,8 @@ footer {
   background-color: var(--tertiary);
 }
 
-@media (min-width: 768px) {
-  .news-input {
-    width: 50%;
-  }
-}
+
+
 
 @media (max-width: 768px) {
   .carousel-caption h1 {
