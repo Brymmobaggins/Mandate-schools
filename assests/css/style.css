@@ -69,7 +69,6 @@ body {
   backdrop-filter: blur(6px);
 }
 /* moving admission text */
-
 .marquee-wrapper {
   white-space: nowrap;
   position: relative;
