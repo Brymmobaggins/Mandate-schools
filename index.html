@@ -5,6 +5,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- for malicious script -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src https:; script-src 'self' https:;"
+    />
     <!-- Google font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -154,7 +159,7 @@
       </div>
       <!-- navbar ends here -->
     </nav>
-     <!-- Admission Notice Marquee -->
+    <!-- Admission Notice Marquee -->
     <div
       class="w-100 bg-warning text-center fw-semibold py-2 overflow-hidden marquee-wrapper"
     >
@@ -162,12 +167,10 @@
         <i class="bi bi-pencil-fill blue"></i>
         Ongoing ADMISSION into Creche, Nursery, Primary, and Secondary classes
         for the 2025/2026 Academic Session is now open. Apply today! on the
-        Admission Page or call 08023213991, 08027738527
-        for more enquires.
+        Admission Page or call 08023213991, 08027738527 for more enquires.
       </div>
     </div>
     <main>
-     
       <!-- Hero Carousel -->
       <section
         id="heroCarousel"
